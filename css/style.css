@@ -1,7 +1,95 @@
-body{height: 100%;}
+@font-face{
+    font-family: "MarkForMCNrw-B";
+    src: url("../fonts/MarkForMCNrw-Black.ttf");    
+}
+@font-face{
+    font-family: "MarkForMCNrw-Bld";
+    src: url("../fonts/MarkForMCNrw-Bold.ttf");    
+}
+body{
+    height: 100%;
+    font-size: 11px;
+}
 
 header{
+    font-family: "MarkForMCNrw-B";
     background: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 75px;
+    width: 100%;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+/*  Navigation  */
+.navbar{
+    color:#fff;
+}
+.navbar-toggler {
+    background-color:#582936;
+    color:#fff;
+    font-size: 1.5rem;
+	line-height: 1.2;
+}
+
+.bar:before { 
+    content:'\2630'; 
+}
+.nav-item{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.nav-item a{
+    color: #fff;
+}
+.nav-item.active a{
+    color:#ffd500;
+    text-decoration: underline;
+}
+
+/*Contenido*/
+
+.quienes{    
+    text-align: center;
+}
+.titulo{
+    font-family: "MarkForMCNrw-Bld";
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+.l-bar{
+    border-right: 1px solid #000;
+}
+.contacto{
+    background: url(../img/contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;    
+}
+.contacto iframe {
+	width: 80%;
+	height: 450px;	
+	vertical-align: middle;
+}
+.top-space{
+    margin-top: 12.5%;
+}
+.leftalign{
+    text-align: left;
+}
+.whiteletter{
+    color:#fff;
+}
+.underlined{
+    text-decoration: underline;
+}
+.linea{
+    border-top:2px solid #fff;
+    width: 50px;
+}
+.pre-footer{
     width: 100%;
 }
