@@ -13,6 +13,7 @@
 body{
     height: 100%;
     font-size: 11px;
+    overflow-x: hidden;
 }
 
 header{
@@ -125,4 +126,10 @@ footer .info{
 footer .copyright{
     background: #252726;
     color:#fff;
+    text-align: center;
+    height: 25px;
+    padding-top: 7px;
+}
+footer .copyright p{
+    padding-top: 7px;
 }
