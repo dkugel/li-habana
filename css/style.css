@@ -6,6 +6,10 @@
     font-family: "MarkForMCNrw-Bld";
     src: url("../fonts/MarkForMCNrw-Bold.ttf");    
 }
+@font-face{
+    font-family: "MarkForMCNrw-light";
+    src: url("../fonts/MarkForMCNrw-Light.ttf");    
+}
 body{
     height: 100%;
     font-size: 11px;
@@ -63,6 +67,12 @@ header{
 .l-bar{
     border-right: 1px solid #000;
 }
+.l-bar-white{
+    border-right: 1px solid #fff;
+}
+.light{
+    font-family: "MarkForMCNrw-light";
+}
 .contacto{
     background: url(../img/contacto.jpg);
     background-size: cover;
@@ -92,4 +102,27 @@ header{
 }
 .pre-footer{
     width: 100%;
+    background: #201d1e;
+}
+.pre-footer p{
+    color: #fff;
+}
+.blue-caption{
+    color: #01c6da;
+}
+.aligncenter{
+    text-align: center;
+}
+/* Footer*/
+footer{
+    width: 100%;
+}
+footer .info{
+    background: #313332;
+    color:#fff;
+    border-bottom: 1px solid #5e605f;
+}
+footer .copyright{
+    background: #252726;
+    color:#fff;
 }
