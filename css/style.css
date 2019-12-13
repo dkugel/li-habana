@@ -53,6 +53,13 @@ header{
     text-decoration: underline;
 }
 
+.navbar-collapse {	
+	z-index: 10;
+    background: url(../img/header.jpg);
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+
 /*Contenido*/
 
 .quienes{    
@@ -74,8 +81,9 @@ header{
     width: 80%;
     margin: 0 auto;
 }
-.historia img{
+.historia img,.permisos img{
     text-align: right;
+    width: 100%;
 }
 .l-bar{
     border-right: 1px solid #313332;
@@ -89,6 +97,10 @@ header{
 .permisos,.procesos, .aux-contacto{
     width: 70%;
     margin: 0 auto;
+}
+.logos img{
+    width: 50%;
+    margin: 5px auto;
 }
 .contacto{    
     background: url(../img/contacto.jpg);
@@ -134,6 +146,9 @@ header{
 .pre-footer p{
     color: #fff;
 }
+.pre-footer img{
+    width: 100%;
+}
 .blue-caption{
     color: #01c6da;
 }
@@ -148,6 +163,9 @@ header{
 }
 .add-space{
     padding: 20px 0;
+}
+.add-space-top{
+    padding: 20px 0 0 0;
 }
 /* Footer*/
 footer{
@@ -167,4 +185,24 @@ footer .copyright{
 }
 footer .copyright{
     padding: 7px 0;
+}
+
+
+/* Móvil*/
+@media(max-width:450px){
+    header{
+        height: 65px;
+    }
+    .navbar a img{
+        height: 45px;
+    }
+    .quienes p {        
+        width: 75%;        
+    }
+    .permisos,.procesos, .aux-contacto, .historia{
+        width: 100%;
+    }
+    .procesos .alignright, .procesos .alignleft{
+        text-align: center;
+    }
 }
