@@ -38,6 +38,7 @@ header{
 	line-height: 1.2;
 }
 
+
 .bar:before { 
     content:'\2630'; 
 }
@@ -51,15 +52,44 @@ header{
 .nav-item.active a{
     color:#ffd500;
     text-decoration: underline;
+    z-index: 11;
 }
 
-.navbar-collapse {	
+
+/* Carousel */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: opacity;
+}
+   
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+   
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+    opacity: 0;
+}
+#carousel-slider{
+    position: relative;
+}
+#carousel-slider #logo-sup {
+	position: absolute;
+	top: 10%;
+	left: 42%;
 	z-index: 10;
-    background: url(../img/header.jpg);
-    background-size: cover;
-    background-repeat:no-repeat ;
 }
-
+#carousel-slider img#logo-sup{
+    max-width: 310px;
+}
+.carousel-indicators li{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
 /*Contenido*/
 
 .quienes{    
@@ -93,6 +123,7 @@ header{
 }
 .light{
     font-family: "MarkForMCNrw-light";
+    font-size: 1.2em;
 }
 .permisos,.procesos, .aux-contacto{
     width: 70%;
@@ -189,12 +220,64 @@ footer .copyright{
 
 
 /* Móvil*/
-@media(max-width:450px){
+@media(max-width:1440px){
+    #carousel-slider #logo-sup {
+        position: absolute;
+        top: 7%;
+        left: 40%;
+        z-index: 10;
+    }
+    #carousel-slider img#logo-sup{
+        max-width: 280px;
+        max-height: 85%;
+    }
+}
+@media(max-width:1024px){
     header{
         height: 65px;
     }
     .navbar a img{
         height: 45px;
+    }
+    .historia {        
+        width: 100%;        
+    }
+    .quienes p {        
+        width: 55%;        
+    }
+    .permisos, .procesos, .aux-contacto {
+        width: 100%;        
+    }   
+    .navbar-collapse {	
+        z-index: 11;
+        background: url(../img/header.jpg);
+        background-size: cover;
+        background-repeat:no-repeat ;
+    } 
+}
+@media(max-width:1024) and (min-width:768px){
+    .pre-footer img {        
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media(max-width:480px){
+    header{
+        height: 65px;
+    }
+    .navbar a img{
+        height: 45px;
+    }
+    #carousel-slider #logo-sup {        
+        top: 0;
+    }
+    .carousel-indicators {
+        z-index:10;
+    }
+    .carousel-indicators li {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
     }
     .quienes p {        
         width: 75%;        
@@ -204,5 +287,8 @@ footer .copyright{
     }
     .procesos .alignright, .procesos .alignleft{
         text-align: center;
+    }
+    .add-space {
+        padding: 20px;
     }
 }
