@@ -233,9 +233,14 @@ header{
 .mapa{
     background: url(../img/mapa.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right -30px;
-    padding-top: 50px;
+    background-size: contain;
+    min-height: 220px;        
+}
+.cannabis-con{
+    background: url(../img/gotero.png);
+    background-repeat: no-repeat;
+    background-size: contain;    
+    background-position: right;
 }
 /* Footer*/
 footer{
