@@ -126,7 +126,7 @@ header{
     font-size: 1.2em;
 }
 .permisos,.procesos, .aux-contacto{
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
 }
 .logos img{
@@ -197,6 +197,45 @@ header{
 }
 .add-space-top{
     padding: 20px 0 0 0;
+}
+.info-text p {    
+    font-size: 5em;
+    font-weight: bold;   
+    line-height: 45px;    
+    margin-bottom: 0; 
+}
+
+.info-text span {
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 10px;
+    display: block;
+    margin-top: 5px;
+}
+.info-text-2 p {    
+    font-size: 3em;
+    font-weight: bold;   
+    line-height: 35px;    
+    margin-bottom: 0; 
+}
+.ajuste{
+    width: 100%;
+    margin-top: -70px;
+}
+.bandera{
+    background: url(../img/bandera.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right -30px;
+    padding-top: 50px;
+}
+.mapa{
+    background: url(../img/mapa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right -30px;
+    padding-top: 50px;
 }
 /* Footer*/
 footer{
