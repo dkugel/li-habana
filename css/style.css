@@ -26,6 +26,8 @@ header{
     color:#fff;
     text-transform: uppercase;
     font-size: 1.2em;
+    position: fixed;
+    z-index: 100;
 }
 /*  Navigation  */
 .navbar{
@@ -116,7 +118,7 @@ header{
     width: 100%;
 }
 .l-bar{
-    border-right: 1px solid #313332;
+    border-right: 1px solid #313332;    
 }
 .l-bar-white{
     border-right: 1px solid #fff;
@@ -132,6 +134,12 @@ header{
 .logos img{
     width: 50%;
     margin: 5px auto;
+}
+.procesos img{
+    max-width: 100px;
+}
+.big{
+    font-size: 1.4em;
 }
 .contacto{    
     background: url(../img/contacto.jpg);
@@ -219,9 +227,10 @@ header{
     line-height: 35px;    
     margin-bottom: 0; 
 }
-.ajuste{
+.procesos img.ajuste{
     width: 100%;
     margin-top: -70px;
+    min-width: 100%;
 }
 .bandera{
     background: url(../img/bandera.png);
@@ -236,11 +245,15 @@ header{
     background-size: contain;
     min-height: 220px;        
 }
+.mapa .small-p{
+    padding-top: 80px;
+}
 .cannabis-con{
-    background: url(../img/gotero.png);
+    background: url(../img/gotero.png), url(../img/gotero-2.png);
     background-repeat: no-repeat;
-    background-size: contain;    
-    background-position: right;
+    background-size: 15%, 60%;    
+    background-position: right, bottom left;
+    min-height: 300px;
 }
 /* Footer*/
 footer{
@@ -261,7 +274,9 @@ footer .copyright{
 footer .copyright{
     padding: 7px 0;
 }
-
+.social img{
+    max-width: 32px;
+}
 
 /* Móvil*/
 @media(max-width:1440px){
@@ -334,5 +349,8 @@ footer .copyright{
     }
     .add-space {
         padding: 20px;
+    }
+    .l-bar{
+        border: none;
     }
 }
