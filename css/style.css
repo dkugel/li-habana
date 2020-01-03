@@ -39,7 +39,12 @@ header{
     font-size: 1.5rem;
 	line-height: 1.2;
 }
-
+.navbar a img {
+	height: 45px;
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
 
 .bar:before { 
     content:'\2630'; 
@@ -56,7 +61,6 @@ header{
     text-decoration: underline;
     z-index: 11;
 }
-
 
 /* Carousel */
 .carousel-fade .carousel-item {
@@ -132,7 +136,7 @@ header{
     margin: 0 auto;
 }
 .logos img{
-    width: 50%;
+    width: 60%;
     margin: 5px auto;
 }
 .procesos img{
@@ -145,7 +149,8 @@ header{
     background: url(../img/contacto.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 560px;    
+    min-height: 560px;  
+    padding-bottom: 40px;  
 }
 .contacto iframe {
 	width: 100%;
@@ -161,6 +166,9 @@ header{
     background: #d9d9d9;
     color:#313332;
     border-radius: 0;
+}
+.sponsor{
+    background: #313332;
 }
 .top-space{
     margin-top: 12.5%;
@@ -320,15 +328,34 @@ footer .copyright{
         bottom: 0;
     }
 }
+@media(max-width:990px){
+    #carousel-slider img#logo-sup {        
+        max-height: 65%;
+    }
+    #carousel-slider #logo-sup {        
+        top: 20%;
+        left: 42%;
+        z-index: 10;
+    }
+}
 @media(max-width:480px){
     header{
         height: 65px;
     }
-    .navbar a img{
+    .navbar a img {
         height: 45px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    #carousel-slider {       
+        padding-top: 65px;
+    }
+    #carousel-slider img#logo-sup {        
+        max-height: 50%;
     }
     #carousel-slider #logo-sup {        
-        top: 0;
+        top: 60px;
     }
     .carousel-indicators {
         z-index:10;
